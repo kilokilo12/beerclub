@@ -10,60 +10,185 @@
         href="https://static1.squarespace.com/static/5bc4b477e8ba44e58687113d/t/5bd8655515fcc0ff5c380f43/favicon.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <article class="" container>
+    <!-- nav -->
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a href="/" class="navbar-brand">Got Beer?</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+        </ul>
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Taste new beers every month!</i></p>
+            <a href="/login">Sign In / Sign Up</a>
+        </div>
+    </nav>
+
+    <article class="container mt-3">
+        <div class="row d-none d-sm-block">
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <strong>Sale is now on!</strong> Join before the end of the month to get your first box for free!
+                    Click <a href="">here</a> for more information.
+                </div>
+            </div>
+        </div>
         <!-- callout -->
-        <section class="callout">
-            <h1>The Beer Tasting Club - Monthly Subscription Box</h1>
-            <p>Join today to get a discount on your first box! </p>
-
-        </section>
-
+        <div class="row">
+            <div class="col-12">
+                <section class="callout jumbotron text-center">
+                    <h1>The Beer Tasting Club - Monthly Subscription Box</h1>
+                    <p class="lead"><strong><mark>Join today to get a 50% discount on your first box!</mark></strong>
+                    </p>
+                    <button class="btn btn-success btn-lg">Sign Up</button>
+                    <p class="text-muted"><small>You must be over 18 to subscribe.<br> Always drink responsibly.</small>
+                    </p>
+                </section>
+            </div>
+        </div>
         <hr>
 
         <!-- quotes -->
         <section class=members>
-            <h2 class="text-uppercase">Members say:</h2>
-            <div class="quote">
-                <p>I'm loving the surprise element every month when I receive my box</p>
-                <p>- Beer lover</p>
+            <div class="row">
+                <div class="col-12 my-3">
+                    <h2 class="text-uppercase">Members say:</h2>
+                </div>
             </div>
-            <div class="quote">
-                <p>Burp!</p>
-                <p>- Another beer lover</p>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/beer1.jpg" class="mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I'm loving the surprise element every month when I receive my box</p>
+                                <p>- Beer lover</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/beer2.jpg" class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>Burp!</p>
+                                <p>- Another beer lover</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <hr>
+
+        <!-- Features -->
         <section class="features">
-            <h2>Features:</h2>
-            <div class="feature">
-                <h4>Feature 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus mattis odio
-                    eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque arcu
-                    nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam non,
-                    pulvinar ac ligula. In nec justo dui. </p>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">Features:</h2>
+                </div>
             </div>
-            <div class="feature">
-                <h4>Feature 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus mattis odio
-                    eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque arcu
-                    nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam non,
-                    pulvinar ac ligula. In nec justo dui. </p>
-            </div>
-            <div class="feature">
-                <h4>Feature 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus mattis odio
-                    eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque arcu
-                    nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam non,
-                    pulvinar ac ligula. In nec justo dui. </p>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature">
+                        <h4> <i class="fas fa-beer d-none d-sm-block"></i> Feature 1 <span
+                                class="badge badge-success">NEW!</span></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus
+                            mattis
+                            odio
+                            eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque
+                            arcu
+                            nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam
+                            non,
+                            pulvinar ac ligula. In nec justo dui. </p>
+                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature">
+                        <h4><i class="fas fa-gift d-none d-sm-block"></i> Feature 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus
+                            mattis
+                            odio
+                            eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque
+                            arcu
+                            nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam
+                            non,
+                            pulvinar ac ligula. In nec justo dui. </p>
+                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none d-lg-block col-lg-4">
+                    <div class="feature">
+                        <h4><i class="fas fa-credit-card d-none d-sm-block"></i> Feature 3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus
+                            mattis
+                            odio
+                            eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque
+                            arcu
+                            nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam
+                            non,
+                            pulvinar ac ligula. In nec justo dui. </p>
+                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                    </div>
+                </div>
             </div>
         </section>
+        <section>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h3>Box of the month</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Brewery</th>
+                                <th>Name</th>
+                                <th>Style</th>
 
+                            </tr>
+
+                        </thead>
+                </div>
+                <div class="col-12">
+                    <tbody>
+                        <tr>
+                            <th>Pühaste</th>
+                            <th>Pillerkaar</th>
+                            <th>India Pale Ale</th>
+                        </tr>
+                        <tr>
+                            <th>Põhjala</th>
+                            <th>Cherry Banger</th>
+                            <th>Imperial Stout</th>
+                        </tr>
+                        <tr>
+                            <th>Amundsen Bryggeri</th>
+                            <th>Natural Born Chillers</th>
+                            <th>Session IPA</th>
+                        </tr>
+                        <tr>
+                            <th>Poesiat & Kater</th>
+                            <th>Kissing Eagle</th>
+                            <th>Fruit Beer</th>
+                        </tr>
+                    </tbody>
+                </div>
+                </table>
+            </div>
+        </section>
     </article>
 </body>
 
