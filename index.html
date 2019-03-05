@@ -8,24 +8,38 @@
     <title>Got Beer? | The Beer Tasting Club</title>
     <link rel="shortcut icon" type="image/x-icon"
         href="https://static1.squarespace.com/static/5bc4b477e8ba44e58687113d/t/5bd8655515fcc0ff5c380f43/favicon.ico" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- nav -->
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
         <a href="/" class="navbar-brand">Got Beer?</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
-        </ul>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Beers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Lagers</a>
+                        <a class="dropdown-item" href="#">IPAs</a>
+                        <a class="dropdown-item" href="#">Stouts</a>
+                        <a class="dropdown-item" href="#">Other styles</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+            </ul>
+        </div>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>Taste new beers every month!</i></p>
             <a href="/login">Sign In / Sign Up</a>
@@ -48,7 +62,8 @@
                     <h1>The Beer Tasting Club - Monthly Subscription Box</h1>
                     <p class="lead"><strong><mark>Join today to get a 50% discount on your first box!</mark></strong>
                     </p>
-                    <button class="btn btn-success btn-lg">Sign Up</button>
+                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
+                        Up</button>
                     <p class="text-muted"><small>You must be over 18 to subscribe.<br> Always drink responsibly.</small>
                     </p>
                 </section>
@@ -148,48 +163,81 @@
             </div>
         </section>
         <section>
-            <div class="row">
-                <div class="col-12 my-5">
-                    <h3>Box of the month</h3>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Brewery</th>
-                                <th>Name</th>
-                                <th>Style</th>
-
-                            </tr>
-
-                        </thead>
-                </div>
-                <div class="col-12">
+            <div class="container my-5">
+                <h4 class="uppercase">Box of the month</h4>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Style</th>
+                            <th scope="col">Brewery</th>
+                            <th scope="col">Name</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
-                            <th>Pühaste</th>
-                            <th>Pillerkaar</th>
-                            <th>India Pale Ale</th>
+                            <th scope="row">IPA</th>
+                            <td>Pühaste</td>
+                            <td>Pillerkaar</td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <th>Põhjala</th>
-                            <th>Cherry Banger</th>
-                            <th>Imperial Stout</th>
+                            <th scope="row">Stout</th>
+                            <td>Põhjala</td>
+                            <td>Cherry Bänger</td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <th>Amundsen Bryggeri</th>
-                            <th>Natural Born Chillers</th>
-                            <th>Session IPA</th>
-                        </tr>
-                        <tr>
-                            <th>Poesiat & Kater</th>
-                            <th>Kissing Eagle</th>
-                            <th>Fruit Beer</th>
+                            <th scope="row">Fruit Beer</th>
+                            <td>Poesiat & Kater</td>
+                            <td>Kissing Eagle</td>
+                            <td><a href="">More</a></td>
                         </tr>
                     </tbody>
-                </div>
                 </table>
             </div>
         </section>
     </article>
+
+    <!-- modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="repeatPassword">Repeat Password</label>
+                            <input type="password" class="form-control" id="repeatPassword"
+                                placeholder="Repeat Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
 </html>
