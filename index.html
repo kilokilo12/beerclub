@@ -5,199 +5,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Got Beer? | The Beer Tasting Club</title>
+    <title>Got Beer? | The Craft Beer Tasting Club</title>
     <link rel="shortcut icon" type="image/x-icon"
         href="https://static1.squarespace.com/static/5bc4b477e8ba44e58687113d/t/5bd8655515fcc0ff5c380f43/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- nav -->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand">Got Beer?</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Beers
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Lagers</a>
-                        <a class="dropdown-item" href="#">IPAs</a>
-                        <a class="dropdown-item" href="#">Stouts</a>
-                        <a class="dropdown-item" href="#">Other styles</a>
-                    </div>
-                </li>
-                <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
-            </ul>
-        </div>
-        <div class="d-none d-md-block">
-            <p class="navbar-text my-auto mr-2"><i>Taste new beers every month!</i></p>
-            <a href="/login">Sign In / Sign Up</a>
-        </div>
-    </nav>
 
-    <article class="container mt-3">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale is now on!</strong> Join before the end of the month to get your first box for free!
-                    Click <a href="">here</a> for more information.
+    <!-- nav -->
+    <div class="container-fluid navalert-container">
+        <div class="container-fluid alert-container">
+            <div class="row d-none d-lg-block">
+                <div class="col-12">
+                    <div class="site-wide-alert alert alert-warning">
+                        <strong>Sale is now on!</strong> Join before the end of the month to get 50% off your first box!
+                        Click <a href="">here</a> for more information.
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- callout -->
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="/" class="navbar-brand">Got Beer?</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Beers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Lagers</a>
+                            <a class="dropdown-item" href="#">IPAs</a>
+                            <a class="dropdown-item" href="#">Stouts</a>
+                            <a class="dropdown-item" href="#">Other styles</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-md-block">
+                <p class="navbar-text my-auto mr-2"><i>Taste new beers every month!</i></p>
+                <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- callout -->
+    <div class="opaque-overlay">&nbsp;</div>
+    <div class="container-fluid callout-container">
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The Beer Tasting Club - Monthly Subscription Box</h1>
-                    <p class="lead"><strong><mark>Join today to get a 50% discount on your first box!</mark></strong>
+                    <h1 class="jumbotron-header">The Craft Beer Tasting Club - Monthly Subscription Box</h1>
+                    <hr class="block-divider">
+                    <p class="lead"><strong><mark>Join today to get a 50% discount on your first
+                                box!</mark></strong>
                     </p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
+                    <button class="btn btn--cta btn--red btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
                         Up</button>
-                    <p class="text-muted"><small>You must be over 18 to subscribe.<br> Always drink responsibly.</small>
+                    <p class="text-muted"><small>You must be over 18 to subscribe.<br> Always drink
+                            responsibly.</small>
                     </p>
                 </section>
             </div>
         </div>
-        <hr>
+    </div>
 
-        <!-- quotes -->
-        <section class=members>
-            <div class="row">
-                <div class="col-12 my-3">
-                    <h2 class="text-uppercase">Members say:</h2>
+    <!-- quotes -->
+    <div class="container-wrapper">
+        <div class="container quotes-container content-container">
+            <section class=members>
+                <div class="row">
+                    <div class="col-12 page-header">
+                        <h2 class="text-uppercase">Members say:</h2>
+                        <hr class="block-divider block-divider--short">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="media">
-                        <div class="d-none d-sm-block">
-                            <img src="images/beer1.jpg" class="mr-3" height=100 width=100>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="media">
+                            <div class="d-none d-sm-block">
+                                <img src="images/beer1.jpg" class="mr-3" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <p>I'm loving the surprise element every month when I receive my box</p>
+                                    <p>- Beer lover</p>
+                                </blockquote>
+                            </div>
                         </div>
-                        <div class="media-body">
-                            <blockquote class="blockquote">
-                                <p>I'm loving the surprise element every month when I receive my box</p>
-                                <p>- Beer lover</p>
-                            </blockquote>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="media">
+                            <div class="d-none d-sm-block">
+                                <img src="images/beer2.jpg" class="rounded-circle mr-3" height=100 width=100>
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <p>Burp!</p>
+                                    <p>- Another beer lover</p>
+                                </blockquote>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="media">
-                        <div class="d-none d-sm-block">
-                            <img src="images/beer2.jpg" class="rounded-circle mr-3" height=100 width=100>
-                        </div>
-                        <div class="media-body">
-                            <blockquote class="blockquote">
-                                <p>Burp!</p>
-                                <p>- Another beer lover</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
+            </section>
+        </div>
+    </div>
 
-        <!-- Features -->
-        <section class="features">
-            <div class="row">
-                <div class="col-12 my-5">
-                    <h2 class="text-uppercase">Features:</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h4> <i class="fas fa-beer d-none d-sm-block"></i> Feature 1 <span
-                                class="badge badge-success">NEW!</span></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus
-                            mattis
-                            odio
-                            eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque
-                            arcu
-                            nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam
-                            non,
-                            pulvinar ac ligula. In nec justo dui. </p>
-                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+    <!-- Features -->
+    <div class="container-wrapper container-wrapper--red">
+        <div class="container features-container content-container">
+            <section class="features">
+                <div class="row">
+                    <div class="col-12 page-header">
+                        <h2 class="text-uppercase">Features:</h2>
+                        <hr class="block-divider block-divider--short block-divider--white">
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h4><i class="fas fa-gift d-none d-sm-block"></i> Feature 2</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus
-                            mattis
-                            odio
-                            eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque
-                            arcu
-                            nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam
-                            non,
-                            pulvinar ac ligula. In nec justo dui. </p>
-                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="feature">
+                            <h4> <i class="fas fa-beer d-none d-sm-block"></i> Feature 1 <span
+                                    class="badge badge-success">NEW!</span></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed
+                                luctus
+                                mattis
+                                odio
+                                eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi.
+                                Quisque
+                                arcu
+                                nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non
+                                aliquam
+                                non,
+                                pulvinar ac ligula. In nec justo dui. </p>
+                            <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="feature">
+                            <h4><i class="fas fa-gift d-none d-sm-block"></i> Feature 2</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed
+                                luctus
+                                mattis
+                                odio
+                                eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi.
+                                Quisque
+                                arcu
+                                nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non
+                                aliquam
+                                non,
+                                pulvinar ac ligula. In nec justo dui. </p>
+                            <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-md-none d-lg-block col-lg-4">
+                        <div class="feature">
+                            <h4><i class="fas fa-credit-card d-none d-sm-block"></i> Feature 3</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed
+                                luctus
+                                mattis
+                                odio
+                                eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi.
+                                Quisque
+                                arcu
+                                nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non
+                                aliquam
+                                non,
+                                pulvinar ac ligula. In nec justo dui. </p>
+                            <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-4">
-                    <div class="feature">
-                        <h4><i class="fas fa-credit-card d-none d-sm-block"></i> Feature 3</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed quam urna. Sed luctus
-                            mattis
-                            odio
-                            eget auctor. Donec a ipsum non justo efficitur congue nec in ex. Nam vel dictum mi. Quisque
-                            arcu
-                            nisl, convallis eu diam at, pretium tristique lacus. Nam enim libero, faucibus non aliquam
-                            non,
-                            pulvinar ac ligula. In nec justo dui. </p>
-                        <p><a class="btn btn-sm btn-light" href="">Read more</a></p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Monthly -->
+    <div class=" container-fluid container-wrapper">
+        <div class=" container month-container content-container">
+            <div class="month-container">
+                <section class="month">
+                    <div class="container page-header">
+                        <h2 class="text-uppercase">Box of the month</h2>
+                        <hr class="block-divider block-divider--short">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Style</th>
+                                    <th scope="col">Brewery</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">IPA</th>
+                                    <td>Pühaste</td>
+                                    <td>Pillerkaar</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Stout</th>
+                                    <td>Põhjala</td>
+                                    <td>Cherry Bänger</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fruit Beer</th>
+                                    <td>Poesiat & Kater</td>
+                                    <td>Kissing Eagle</td>
+                                    <td><a href="">More</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
-        <section>
-            <div class="container my-5">
-                <h4 class="uppercase">Box of the month</h4>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Style</th>
-                            <th scope="col">Brewery</th>
-                            <th scope="col">Name</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">IPA</th>
-                            <td>Pühaste</td>
-                            <td>Pillerkaar</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Stout</th>
-                            <td>Põhjala</td>
-                            <td>Cherry Bänger</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Fruit Beer</th>
-                            <td>Poesiat & Kater</td>
-                            <td>Kissing Eagle</td>
-                            <td><a href="">More</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </article>
+        </div>
+    </div>
+
 
     <!-- modal -->
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
