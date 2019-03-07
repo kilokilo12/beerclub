@@ -28,7 +28,7 @@ body {
 .callout-container {
     height: 100vh;
 
-    background: url(../images/beers-background.jpg) no-repeat center top fixed; 
+    background: url("../images/beers-background.jpg") no-repeat center top fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
